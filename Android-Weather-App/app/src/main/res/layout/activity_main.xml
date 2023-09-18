@@ -1,0 +1,101 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="getWeatherInfo"
+            android:text="@string/button_text"
+            app:layout_constraintBottom_toBottomOf="@+id/editText"
+            app:layout_constraintLeft_toRightOf="@+id/editText"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="231dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/input_hint"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAutofill="no"
+            tools:ignore="RtlHardcoded" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintLeft_toRightOf="@+id/textView"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:text="@string/output_hint"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="300dip"
+          android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+
+
+<!--
+  map:cameraBearing="112.5"
+  map:cameraTargetLat="42.314083"
+  map:cameraTargetLng="-71.037929"
+  map:cameraTilt="30"
+  map:cameraZoom="13"
+  map:mapType="normal"
+  map:uiCompass="false"
+  map:uiRotateGestures="true"
+  map:uiScrollGestures="false"
+  map:uiTiltGestures="true"
+  map:uiZoomControls="false"
+  map:uiZoomGestures="true"/>
+-->
+
+</LinearLayout>

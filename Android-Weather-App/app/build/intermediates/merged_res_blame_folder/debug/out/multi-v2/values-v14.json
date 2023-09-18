@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "edu.umb.cs443.app-mergeDebugResources-43:/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\yagna\\Drive Y\\UMB\\Course Work\\CS Mobile Applications\\Android-Weather-App-main\\Android-Weather-App-main\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "225",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "370"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "149"
+                    }
+                }
+            ]
+        }
+    ]
+}

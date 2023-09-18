@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW3</string>
+    <string name="Tiles">%d Tiles</string>
+    <string name="Treasures">%d Treasures</string>
+    <string name="HighScore">Highest Score: %d</string>
+    <string name="latestScores">Top 5: %d</string>
+
+</resources>
